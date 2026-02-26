@@ -5,7 +5,6 @@ public class Brazo {
     private String tipoMovimiento;
     private float velocidad;
 
-    // método sencillo
     public void asignarMovimiento(String tipo, float vel) {
         tipoMovimiento = tipo;
         velocidad = vel;
