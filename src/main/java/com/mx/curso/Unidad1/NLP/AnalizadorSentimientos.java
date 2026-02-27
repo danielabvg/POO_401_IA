@@ -1,32 +1,30 @@
 package com.mx.curso.Unidad1.NLP;
 
-/**
- * Implementación concreta del MotorIA
- */
+/*
+ Clase que hereda de MotorIA
+*/
 public class AnalizadorSentimientos extends MotorIA {
 
+    // Constructor
     public AnalizadorSentimientos() {
-        super("Sentiment-BERT-Lite", 0.89);
+        super("ModeloSimpleSentimientos", 0.85);
     }
 
+    // Implementación del método abstracto
     @Override
     public void analizar(String texto) {
 
-        System.out.println("\n--- Ejecutando Modelo: " + getNombre() + " ---");
-        System.out.println("Precisión: " + getPrecision());
+        System.out.println("Usando modelo: " + getNombreModelo());
 
-        // Simulación del proceso interno (oculto al usuario)
-        System.out.println("[INFO] Tokenizando texto...");
-        System.out.println("[INFO] Extrayendo embeddings semánticos...");
+        // Convertimos el texto a minúsculas
+        texto = texto.toLowerCase();
 
-        if (texto.toLowerCase().contains("feliz") ||
-                texto.toLowerCase().contains("bueno")) {
-
-            System.out.println("Resulatado: Sentimiento Positivo (Score: " + Math.random() + ")");
+        if (texto.contains("feliz") || texto.contains("bueno")) {
+            System.out.println("Sentimiento: POSITIVO");
         } else {
-            System.out.println("Resultado: Sentimiento Negativo o Neutro.");
+            System.out.println("Sentimiento: NEGATIVO");
         }
 
-        System.out.println("--------------------------------------");
+        System.out.println("-----------------------");
     }
 }
