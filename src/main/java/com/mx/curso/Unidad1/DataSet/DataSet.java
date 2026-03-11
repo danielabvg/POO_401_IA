@@ -9,7 +9,7 @@ public class DataSet {
         this.nombreDataset = nombreDataset;
     }
 
-    // Método para cargar datos (estructura general)
+    // Método para cargar datos
     public void cargarDatos() {
         System.out.println("Cargando dataset: " + nombreDataset);
     }
