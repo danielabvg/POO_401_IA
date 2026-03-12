@@ -1,6 +1,6 @@
 package com.mx.curso.Unidad1.LN;
 
-public class PLN {
+public abstract class PLN {
 
     public abstract void procesarExpresion(String expresion);
 
@@ -15,5 +15,4 @@ public class PLN {
     public abstract void generarImagen(String descripcion);
 
     public abstract void temperaturaModelo(double parametros);
-
 }
