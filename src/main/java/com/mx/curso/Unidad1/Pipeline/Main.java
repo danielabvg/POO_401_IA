@@ -1,7 +1,6 @@
 package com.mx.curso.Unidad1.Pipeline;
 
 import com.mx.curso.Unidad1.FiltroImagen.FiltroImagen;
-import com.mx.curso.Unidad1.FiltroImagen.ReductorDeRuido;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,6 @@ public class Main {
         // Lista polimórfica que acepta cualquier tipo de filtro
         List<FiltroImagen> pipeline = new ArrayList<>();
 
-        pipeline.add(new ReductorDeRuido());
         pipeline.add(new DetectorDeBordes());
         pipeline.add(new EscalaDeGrises());
 
