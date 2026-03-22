@@ -1,5 +1,6 @@
 package com.mx.curso.Unidad2.Practica05;
 
+import com.mx.curso.Unidad2.Practica05.ProcesadorNLP;
 import java.util.*;
 
 public class ProcesadorSimple extends ProcesadorNLP {
