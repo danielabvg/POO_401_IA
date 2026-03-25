@@ -9,19 +9,22 @@ public class Main {
 
         List<SensorIA> percepcionHD = new ArrayList<>();
 
-        SensorLidar obj1 = new SensorLidar();
-        SensorLidar obj2 = new SensorLidar();
-        SensorVision obj3 = new SensorVision();
-        SensorVision obj4 = new SensorVision(); // ← faltaba esto
+        SensorLidar obj1 = new SensorLidar("1.1", 1.30);
+        SensorLidar obj2 = new SensorLidar("1.4", 2.65);
+        SensorVision obj3 = new SensorVision("1.23", 2.44);
+        SensorVision obj4 = new SensorVision("1.7", 2.01);
+        SensorUltrasonido obj5 = new SensorUltrasonido("1.43", 1.54);
+        SensorUltrasonido obj6 = new SensorUltrasonido("1.92", 1.26);
 
         percepcionHD.add(obj1);
         percepcionHD.add(obj2);
         percepcionHD.add(obj3);
         percepcionHD.add(obj4);
-        percepcionHD.add(new SensorUltrasonido());
+        percepcionHD.add(obj5);
+        percepcionHD.add(obj6);
 
         for (SensorIA f : percepcionHD) {
-            f.operar();
+            f.leerDatos();
         }
     }
 }
