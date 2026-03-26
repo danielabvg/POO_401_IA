@@ -5,7 +5,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        String texto = "El producto es excelente, muy bueno y genial.";
+        String texto = "El producto es excelente, muy bueno e interesante.";
 
         List<ProcesadorNLP> procesadores = new ArrayList<>();
 
