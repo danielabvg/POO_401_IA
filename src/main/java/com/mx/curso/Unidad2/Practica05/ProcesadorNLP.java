@@ -6,7 +6,6 @@ public abstract class ProcesadorNLP {
 
     protected String textoCrudo;
 
-    // Método concreto
     public void cargarTexto(String texto) {
         this.textoCrudo = texto;
     }
