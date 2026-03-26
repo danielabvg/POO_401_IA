@@ -20,6 +20,6 @@ public class ProcesadorSimple extends ProcesadorNLP {
 
     @Override
     public Object transformarParaModelo() {
-        return tokens.size(); // número de palabras
+        return tokens.size();
     }
 }
