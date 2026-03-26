@@ -11,7 +11,7 @@ public class ProcesadorAnalisisSentimientos extends ProcesadorNLP {
     );
 
     private static final Set<String> PALABRAS_POSITIVAS = Set.of(
-            "bueno", "excelente", "feliz", "increible", "genial"
+            "bueno", "excelente", "feliz", "increible", "genial", "increíble"
     );
 
     @Override
