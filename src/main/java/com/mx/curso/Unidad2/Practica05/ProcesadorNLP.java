@@ -10,8 +10,8 @@ public abstract class ProcesadorNLP {
         this.textoCrudo = texto;
     }
 
-    // Métodos abstractos (contrato)
-    public abstract List<String> tokenizar();
+    // Contrato
     public abstract void limpiarTexto();
+    public abstract List<String> tokenizar();
     public abstract Object transformarParaModelo();
 }

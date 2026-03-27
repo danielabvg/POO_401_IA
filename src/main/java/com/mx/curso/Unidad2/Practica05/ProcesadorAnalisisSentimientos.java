@@ -7,7 +7,7 @@ public class ProcesadorAnalisisSentimientos extends ProcesadorNLP {
     private List<String> tokens = new ArrayList<>();
 
     private static final Set<String> STOP_WORDS = Set.of(
-            "el", "la", "los", "las", "un", "una", "y", "de"
+            "el", "la", "los", "las", "un", "una", "y", "de", "es"
     );
 
     private static final Set<String> PALABRAS_POSITIVAS = Set.of(
@@ -15,17 +15,18 @@ public class ProcesadorAnalisisSentimientos extends ProcesadorNLP {
     );
 
     @Override
-    public List<String> tokenizar() {
-        tokens = new ArrayList<>(Arrays.asList(textoCrudo.split("\\s+")));
-        return tokens;
+    public void limpiarTexto() {
+        textoCrudo = textoCrudo.toLowerCase().replaceAll("[.,]", "");
     }
 
     @Override
-    public void limpiarTexto() {
-        textoCrudo = textoCrudo.toLowerCase().replaceAll("[.,]", "");
+    public List<String> tokenizar() {
         tokens = new ArrayList<>(Arrays.asList(textoCrudo.split("\\s+")));
 
+        // eliminar stopwords
         tokens.removeIf(p -> STOP_WORDS.contains(p));
+
+        return tokens;
     }
 
     @Override
