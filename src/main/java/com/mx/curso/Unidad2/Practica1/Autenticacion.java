@@ -24,7 +24,7 @@ public class Autenticacion {
                     System.out.println("Contraseña incorrecta.");
                 }
             } else {
-                System.out.println("Usuario no encontrado.");
+                System.out.println("Usuario no encontrado."); //No encontrar
             }
 
             if (i == 3) {
