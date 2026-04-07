@@ -28,7 +28,7 @@ public class Autenticacion {
             }
 
             if (i == 3) {
-                System.out.println("Demasiados intentos. Acceso denegado.");
+                System.out.println("Demasiados intentos. Acceso denegado.");  //Intentos
             }
         }
     }
