@@ -1,4 +1,4 @@
-package com.mx.curso.Unidad2.Practica1;
+package com.mx.curso.Unidad2.Interfaces.Practica1;
 
 import java.util.Scanner;
 

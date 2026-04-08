@@ -1,4 +1,4 @@
-package com.mx.curso.Unidad2.Practica1;
+package com.mx.curso.Unidad2.Interfaces.Practica1;
 
 public class ReporteInventario {
     public static void main(String[] args) {
