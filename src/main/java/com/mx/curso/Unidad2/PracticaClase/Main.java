@@ -1,4 +1,4 @@
-package unidad3.figuras;
+package com.mx.curso.Unidad2.PracticaClase;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,12 +14,17 @@ public class Main {
 
         System.out.println("Implementacion 2 ");
 
-        RectanguloV2 rectanguloV2 = new RectanguloV2();
+        Rectangulo2 rectanguloV2 = new Rectangulo2();
         rectanguloV2.setBase(6.0);
         rectanguloV2.setAltura(4.8);
 
         System.out.println("Calcular area version 2.0" + " " + rectanguloV2.calcularArea());
 
+        Rectangulo2 rectangulo2 = new Rectangulo2("Rectangulo 2");
+        rectangulo2.setBase(20);
+        rectangulo2.setAltura(13);
+        rectangulo2.mostrarNombre();
+        System.out.println("El área es: " + rectangulo2.calcularArea());
 
     }
 }

@@ -1,4 +1,4 @@
-package unidad3.figuras;
+package com.mx.curso.Unidad2.PracticaClase;
 
 abstract class FiguraGeometrica {
     protected String nombre;
