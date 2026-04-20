@@ -24,7 +24,7 @@ public class Actividad5 {
             } else {
                 System.out.println("Credenciales incorrectas.");
                 if (i == 3) {
-                    System.out.println("Acceso denegado.");
+                    System.out.println("Acceso denegado");
                 }
             }
         }
