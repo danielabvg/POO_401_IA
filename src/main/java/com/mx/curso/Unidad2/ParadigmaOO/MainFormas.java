@@ -1,6 +1,10 @@
 package com.mx.curso.Unidad2.ParadigmaOO;
 
 class Forma {
+    public Forma() {
+
+    }
+
     double calcularArea() {
         return 0;
     }
@@ -10,6 +14,7 @@ class Circulo extends Forma {
     double radio;
 
     Circulo(double radio) {
+        super();
         this.radio = radio;
     }
 
@@ -23,6 +28,7 @@ class Rectangulo extends Forma {
     double base, altura;
 
     Rectangulo(double base, double altura) {
+        super();
         this.base = base;
         this.altura = altura;
     }
@@ -36,7 +42,7 @@ class Rectangulo extends Forma {
 public class MainFormas {
     public static void main(String[] args) {
         Forma[] formas = {
-                new Circulo2(3),
+                new Forma(),
                 new Rectangulo(4, 5)
         };
 
